@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Resto. Project</title>
+<!--font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--font-awesome link-->
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <!--css link-->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+     
+
+    </head>
+    <body>
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+
+
+<nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#dishes">dishes</a>
+    <a href="#about">about</a>
+    <a href="#review">review</a>
+    <a href="#order">order</a>
+</nav>
+
+<div class="icons">
+    <i class="fas fa-bars" id="menu-bars"></i>
+    <i class="fas fa-search" id="search-icon"></i>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+</div>
+
+</header>
+
+<!--header sections end-->
+
+
+<!--seatch  forms-->
+<form action="" id="search-form">
+    <input type="search" name=""placeholder="search here..." id="search-box">
+    <label for="search-box" placeholder="search here..." class="fas fa-search"></label>
+<i class="fas fa-times" id="close"></i>
+
+</form>
+
+<!--seatch  forms-->
+
+
+<!--home section start-->
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+  <div class="swiper-wrapper wrapper ">
+       <div class="swiper-slide slide ">
+           <div class="content">
+               <span>our special dish</span>
+               <h3>spicy noodles</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit natus dolor cumque?</p>
+               <a href="#" class="btn">Order Now</a>
+           </div>
+           <div class="image">
+               <img src="images/home-img-1.png"  alt="" class="">
+           </div>
+</div>
+
+       <div class="swiper-slide slide">
+        <div class="content">
+            <span>our special dish</span>
+            <h3>Fried Chicken</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit natus dolor cumque?</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+            <img src="images/home-img-2.png" alt="">
+        </div>
+  </div>
+    <div class="swiper-slide slide">
+        <div class="content">
+            <span>our special dish</span>
+            <h3>hot pizza</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sit natus dolor cumque?</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+            <img src="images/home-img-3.png" alt="">
+        </div>
+ </div>
+   <div class="swiper-pagination"></div>
+</div>
+</div>
+</section>
+<!--home section start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="js/react.js">
+        let menu =document.querySelector('#menu-bars');
+let navbar =document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+}  menu.classList.toggle('active');
+
+
+var swiper = new Swiper(".home-slider", {
+spaceBetween: 30,
+centeredSlides: true,
+autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+},
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+ loop: true,
+});
+        </script>
+    </body>
+    </html>
